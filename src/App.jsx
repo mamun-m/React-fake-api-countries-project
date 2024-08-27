@@ -1,17 +1,9 @@
-import "./App.css";
-const App = () => {
-  const divfunction = (e) => {
-    console.log("div function :", e);
-  };
-  const buttonfunction = (e) => {
-    e.stopPropagation();
-    console.log("button function : ", e);
-  };
+import Home from "./components/Home";
 
+const App = () => {
   return (
-    <div className="first-div" onClick={divfunction}>
-      <h1>welcome to everyone </h1>
-      <button onClick={buttonfunction}>increment</button>
+    <div>
+      <Home />
     </div>
   );
 };
